@@ -1,0 +1,10 @@
+version: "3"
+
+services:
+  redis:  
+    image: redis:7.0.10
+    command: 
+      - redis-server
+      - --appendonly yes
+    ports:
+      - 6379:6379
